@@ -28,49 +28,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const game in comments) {
         document.getElementById(game + '-comments').innerHTML = comments[game].map(c => `<p>${c}</p>`).join('');
     }
-
-    const username = localStorage.getItem('username');
-    if (!username) {
-        openModal();
-    } else {
-        alert('Welcome back, ' + username + '!');
-    }
 });
-
-function openModal() {
-    document.getElementById('auth-modal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('auth-modal').style.display = 'none';
-}
-
-function authenticate() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    if (username && password) {
-        localStorage.setItem('username', username);
-        closeModal();
-        alert('Welcome, ' + username + '!');
-    } else {
-        alert('Please enter both username and password.');
-    }
-}
 
 function goHome() {
     window.location.href = "../index.html";
 }
 
-function toggleFullScreen(id) {
-    const element = document.getElementById(id);
-    if (element.requestFullscreen) {
-        element.requestFullscreen();
-    } else if (element.mozRequestFullScreen) { // Firefox
-        element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        element.webkitRequestFullscreen();
-    } else if (element.msRequestFullscreen) { // IE/Edge
-        element.msRequestFullscreen();
-    }
-}
-</script>
+function
