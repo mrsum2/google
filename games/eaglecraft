@@ -1,0 +1,6 @@
+<div class="game" id="eaglercraft">
+    <a href="https://eaglercraft.com/mc/1.8.8/" target="_blank">
+        <img src="EaglerCraftImageURL" alt="Eagler Craft 1.8.8">
+    </a>
+    <button onclick="goHome()">Back to Home</button>
+</div>
