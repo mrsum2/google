@@ -27,3 +27,16 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+img:hover::after {
+    content: attr(alt);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
