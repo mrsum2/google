@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const game in comments) {
         document.getElementById(game + '-comments').innerHTML = comments[game].map(c => `<p>${c}</p>`).join('');
     }
+
+    // Check for saved theme and apply
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
 });
 
 function goHome() {
@@ -44,6 +49,15 @@ function toggleFullScreen(id) {
         element.webkitRequestFullscreen();
     } else if (element.msRequestFullscreen) { // IE/Edge
         element.msRequestFullscreen();
+    }
+}
+
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
     }
 }
 </script>
