@@ -1,74 +1,29 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #20232a;
-    color: #61dafb;
-}
-
-header {
-    background-color: #282c34;
-    padding: 20px;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-nav a {
-    color: #61dafb;
-    text-decoration: none;
-    margin: 0 15px;
+.container {
+    margin: 20px auto;
+    max-width: 600px;
 }
 
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.game {
+    margin-bottom: 30px;
 }
 
-#game-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+img {
+    max-width: 100%;
+    transition: all 0.3s;
 }
 
-#game-list li {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    flex-direction: column;
-    text-align: center;
+img:hover {
+    filter: hue-rotate(360deg);
 }
 
-#game-list a {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-    color: #61dafb;
-}
-
-#game-list img {
-    border-radius: 20%;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 150px;
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-#game-list img:hover {
-    filter: blur(2px);
-    transform: scale(1.1);
-}
-
-#game-list span {
-    font-size: 20px;
-    color: #61dafb;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-#game-list li:hover span {
-    opacity: 1;
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
