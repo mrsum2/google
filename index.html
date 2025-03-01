@@ -7,30 +7,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="minecraft.html">Minecraft</a></li>
+            <li><a href="eaglercraft.html">Eagler Craft</a></li>
+            <li><a href="basketbros.html">Basket Bros</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Welcome to the Game Site</h1>
         <!-- Minecraft Java: Edition -->
         <div class="game" id="minecraft">
-            <a href="games/minecraft.html">
+            <a href="minecraft.html">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.wu8WIkZGZ16E7OqAHpFnnQHaEK&pid=Api&P=0&h=180" alt="Minecraft Java: Edition">
             </a>
+            <div class="rating">
+                <span class="star" onclick="rateGame('minecraft', 5)">&#9733;</span>
+                <span class="star" onclick="rateGame('minecraft', 4)">&#9733;</span>
+                <span class="star" onclick="rateGame('minecraft', 3)">&#9733;</span>
+                <span class="star" onclick="rateGame('minecraft', 2)">&#9733;</span>
+                <span class="star" onclick="rateGame('minecraft', 1)">&#9733;</span>
+            </div>
+            <p id="minecraft-rating">Rating: 0</p>
             <button onclick="goHome()">Back to Home</button>
         </div>
         <!-- Eagler Craft 1.8.8 -->
         <div class="game" id="eaglercraft">
-            <a href="games/eaglercraft.html">
+            <a href="eaglercraft.html">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.gcpQJNEhaz5-2extV8rEAQHaEQ&pid=Api&P=0&h=180" alt="Eagler Craft 1.8.8">
             </a>
+            <div class="rating">
+                <span class="star" onclick="rateGame('eaglercraft', 5)">&#9733;</span>
+                <span class="star" onclick="rateGame('eaglercraft', 4)">&#9733;</span>
+                <span class="star" onclick="rateGame('eaglercraft', 3)">&#9733;</span>
+                <span class="star" onclick="rateGame('eaglercraft', 2)">&#9733;</span>
+                <span class="star" onclick="rateGame('eaglercraft', 1)">&#9733;</span>
+            </div>
+            <p id="eaglercraft-rating">Rating: 0</p>
             <button onclick="goHome()">Back to Home</button>
         </div>
         <!-- Basket Bros -->
         <div class="game" id="basketbros">
-            <a href="games/basketbros.html">
+            <a href="basketbros.html">
                 <img src="https://tse2.mm.bing.net/th?id=OIP.hKZHbFV9hitcpsUbWoNJAwHaFj&pid=Api&P=0&h=180" alt="Basket Bros">
             </a>
+            <div class="rating">
+                <span class="star" onclick="rateGame('basketbros', 5)">&#9733;</span>
+                <span class="star" onclick="rateGame('basketbros', 4)">&#9733;</span>
+                <span class="star" onclick="rateGame('basketbros', 3)">&#9733;</span>
+                <span class="star" onclick="rateGame('basketbros', 2)">&#9733;</span>
+                <span class="star" onclick="rateGame('basketbros', 1)">&#9733;</span>
+            </div>
+            <p id="basketbros-rating">Rating: 0</p>
             <button onclick="goHome()">Back to Home</button>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2025 Game Site. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
