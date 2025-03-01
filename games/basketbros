@@ -1,6 +1,0 @@
-<div class="game" id="basketbros">
-    <a href="https://basketbros.io/" target="_blank">
-        <img src="BasketBrosImageURL" alt="Basket Bros">
-    </a>
-    <button onclick="goHome()">Back to Home</button>
-</div>
