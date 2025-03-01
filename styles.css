@@ -20,23 +20,27 @@ img {
     height: 150px;
     border-radius: 50%;
     transition: all 0.3s;
+    position: relative;
 }
 
 img:hover {
     filter: hue-rotate(360deg);
 }
 
-img:hover::after {
+img::after {
     content: attr(alt);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
     color: transparent;
     font-size: 24px;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+img:hover::after {
+    color: white;
 }
 
 button {
