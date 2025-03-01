@@ -16,7 +16,9 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     transition: all 0.3s;
 }
 
