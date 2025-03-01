@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="games/minecraft.html">Minecraft</a></li>
+            <li><a href="games/eaglercraft.html">Eagler Craft</a></li>
+            <li><a href="games/basketbros.html">Basket Bros</a></li>
+            <li><button onclick="toggleTheme()">Toggle Theme</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Search Games</h1>
+        <input type="text" id="search-input" placeholder="Search for a game..." oninput="searchGames()">
+        <div id="search-results"></div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Game Site. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
