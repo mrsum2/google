@@ -2,6 +2,12 @@
 let ratings = JSON.parse(localStorage.getItem('ratings')) || {};
 let comments = JSON.parse(localStorage.getItem('comments')) || {};
 
+const games = [
+    { name: 'Minecraft Java: Edition', url: 'games/minecraft.html' },
+    { name: 'Eagler Craft 1.8.8', url: 'games/eaglercraft.html' },
+    { name: 'Basket Bros', url: 'games/basketbros.html' },
+];
+
 function rateGame(game, rating) {
     ratings[game] = rating;
     localStorage.setItem('ratings', JSON.stringify(ratings));
@@ -59,5 +65,12 @@ function toggleTheme() {
     } else {
         localStorage.setItem('theme', 'light');
     }
+}
+
+function searchGames() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const results = games.filter(game => game.name.toLowerCase().includes(query));
+    const resultsDiv = document.getElementById('search-results');
+    resultsDiv.innerHTML = results.map(game => `<a href="${game.url}">${game.name}</a>`).join('<br>');
 }
 </script>
