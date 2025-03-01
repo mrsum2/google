@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .container {
@@ -10,6 +12,7 @@ body {
 
 .game {
     margin-bottom: 30px;
+    position: relative;
 }
 
 img {
@@ -19,13 +22,6 @@ img {
 
 img:hover {
     filter: hue-rotate(360deg);
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 img:hover::after {
@@ -39,4 +35,19 @@ img:hover::after {
     color: transparent;
     font-size: 24px;
     font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
 }
