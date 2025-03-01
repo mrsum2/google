@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Game Hub</title>
+    <title>Game Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>New Game Hub</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-    <main>
-        <ul id="game-list">
-            <!-- Game items will be inserted here by game.js -->
-        </ul>
-    </main>
-    <script src="game.js"></script>
+    <div class="container">
+        <h1>Welcome to the Game Site</h1>
+        <div class="game" id="minecraft">
+            <a href="https://mcraft.fun/" target="_blank">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.wu8WIkZGZ16E7OqAHpFnnQHaEK&pid=Api&P=0&h=180" alt="Minecraft Java: Edition">
+            </a>
+            <button onclick="goHome()">Back to Home</button>
+        </div>
+        <!-- Add more game sections here -->
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
