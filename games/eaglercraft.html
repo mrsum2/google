@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagler Craft 1.8.8</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="minecraft.html">Minecraft</a></li>
+            <li><a href="eaglercraft.html">Eagler Craft</a></li>
+            <li><a href="basketbros.html">Basket Bros</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Eagler Craft 1.8.8</h1>
-        <iframe src="https://eaglercraft.com/mc/1.8.8/" width="100%" height="600px"></iframe>
+        <div class="game-container">
+            <iframe id="eaglercraft-frame" src="https://eaglercraft.com/mc/1.8.8/" width="100%" height="600px"></iframe>
+            <button onclick="toggleFullScreen('eaglercraft-frame')">Full Screen</button>
+        </div>
         <button onclick="goHome()">Back to Home</button>
     </div>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2025 Game Site. All rights reserved.</p>
+    </footer>
+    <script src="../scripts.js"></script>
 </body>
 </html>
